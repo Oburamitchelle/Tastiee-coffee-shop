@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tastiee</title>
+    <link rel="stylesheet" href="/tastiee/tastiee.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">Tastie <span>Coffee</span> shop</a>
+        <nav>
+          <button class="mobile-menu-btn">☰</button>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Bold Coffee for Brave Souls</h1>
+        <p>
+          Experience the perfect blend of rich flavors and cozy atmosphere at
+          Tastiee Coffee. Where every cup tells a story.
+        </p>
+        <a href="#menu" class="btn">View Our Menu</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Our Story</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Founded in 2025, Tastiee Coffee  Shop began as a small passion project
+              between two friends who believed that coffee should be an
+              adventure. We source our beans from sustainable farms around the
+              town, ensuring every cup is both ethically produced and
+              exceptionally flavorful.
+            </p>
+            <p>
+              Our baristas are trained in the art of coffee making, from precise
+              pour-overs to creative latte art. We're not just a coffee shop -
+              we're a community hub where ideas are born and connections are
+              made.
+            </p>
+            <p>
+              At Tastiee, we believe that trying new things takes courage, which
+              is why we're constantly experimenting with new brewing methods and
+              flavor combinations to surprise and delight our customers.
+            </p>
+            <a href="#location" class="btn">Visit Us</a>
+          </div>
+          <div class="about-image">
+            <img src="./images/coffe shop.avif"
+    alt="Coffee shop interior"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="coffee">
+            Coffee
+          </button>
+          <button class="category-btn" data-category="tea">Tea</button>
+          <button class="category-btn" data-category="pastries">
+            Pastries
+          </button>
+          <button class="category-btn" data-category="specialty">
+            Specialty Drinks
+          </button>
+        </div>
+        <div class="menu-items">
+          <!-- Coffee Items -->
+          <div class="menu-item" data-category="coffee">
+            <img
+              src="./images/expresso.avif"
+              alt="Espresso"
+            />
+            <div class="menu-item-content">
+              <h3>Tastiee Espresso <span class="price">Ksh 250</span></h3>
+              <p>
+                Our signature dark roast, bold and intense with notes of dark
+                chocolate and caramel.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="coffee">
+            <img
+              src="./images/cappuccino.avif"
+              alt="Cappuccino"
+            />
+            <div class="menu-item-content">
+              <h3>Tastiee Cappuccino <span class="price">Ksh 385</span></h3>
+              <p>
+                Perfectly balanced espresso with steamed milk and a thick layer
+                of microfoam.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="coffee">
+            <img
+              src="./images/latte.avif"
+              alt="Pour Over"
+            />
+            <div class="menu-item-content">
+              <h3>
+                Single Origin Pour Over <span class="price">Ksh 200</span>
+              </h3>
+              <p>
+                Ethiopian Yirgacheffe with floral notes and bright citrus
+                acidity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tea Items -->
+          <div class="menu-item" data-category="tea" style="display: none">
+            <img
+              src="./images/Earl Grey Supreme.avif"
+              alt="Earl Grey Tea"
+            />
+            <div class="menu-item-content">
+              <h3>Earl Grey Supreme <span class="price">Ksh 175</span></h3>
+              <p>
+                Black tea scented with oil of bergamot, a classic with a Brave'n
+                twist.
+              </p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="tea" style="display: none">
+            <img
+              src="./images/matcha.avif"
+              alt="Matcha Latte"
+            />
+            <div class="menu-item-content">
+              <h3>
+                Ceremonial Matcha Latte <span class="price">Ksh 150</span>
+              </h3>
+              <p>
+                Premium Japanese matcha whisked with steamed milk of your
+                choice.
+              </p>
+            </div>
+          </div>
+
+          <!-- Pastries -->
+          <div class="menu-item" data-category="pastries" style="display: none">
+            <img
+              src="./images/croissant.avif"
+              alt="Croissant"
+            />
+            <div class="menu-item-content">
+              <h3>Butter Croissant <span class="price">Ksh 225</span></h3>
+              <p>Flaky, buttery layers baked fresh every morning.</p>
+            </div>
+          </div>
+          <div class="menu-item" data-category="pastries" style="display: none">
+            <img
+              src="./images/chocolate cookie.avif"
+              alt="Chocolate Chip Cookie"
+            />
+            <div class="menu-item-content">
+              <h3>
+                Double Chocolate Cookie <span class="price">Ksh 325</span>
+              </h3>
+              <p>
+                Rich, chewy cookie loaded with dark and milk chocolate chunks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Specialty Drinks -->
+          <div
+            class="menu-item"
+            data-category="specialty"
+            style="display: none"
+          >
+            <img
+              src="./images/Caramel Macchiato.avif"
+              alt="Caramel Macchiato"
+            />
+            <div class="menu-item-content">
+              <h3>Caramel Macchiato <span class="price">Ksh 275</span></h3>
+              <p>
+                Espresso with vanilla syrup, steamed milk, and caramel drizzle.
+              </p>
+            </div>
+          </div>
+          <div
+            class="menu-item"
+            data-category="specialty"
+            style="display: none"
+          >
+            <img
+              src="./images/cold brew float.avif"
+              alt="Iced Coffee"
+            />
+            <div class="menu-item-content">
+              <h3>Cold Brew Float <span class="price">Ksh 200</span></h3>
+              <p>
+                Our signature cold brew topped with a scoop of vanilla bean ice
+                cream.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+      <div class="container">
+        <h2>Find Us</h2>
+        <div class="location-content">
+          <div class="location-info">
+            <h3>Visit Our Shop</h3>
+            <p><i>📍</i> Shop No. 345 Kimathi street, Nairobi</p>
+            <p><i>🕒</i> Monday - Friday: 6:30 AM - 8:00 PM</p>
+            <p><i>🕒</i> Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+            <p><i>📞</i> +254 12345678</p>
+            <p><i>✉️</i> tastieecoffeeshop.com</p>
+            <p>
+              We're located in the heart of downtown, just a block from Central
+              Park. Look for our distinctive brown awning with the Brave'n logo.
+            </p>
+            <p>
+              Free WiFi available for all customers. Ample seating both indoors
+              and on our patio.
+            </p>
+          </div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8175498507303!2d36.81917812397418!3d-1.2833271856208066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d410bed875%3A0xf6455753f42fd66b!2sKimathi%20St%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1761305194991!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-details">
+              <h3>Contact Information</h3>
+              <p><i>📞</i> +254 12345678</p>
+              <p><i>✉️</i>tastieecoffeeshop.com</p>
+              <p><i>📍</i> shop NO. 345, Kimathi street, Nairobi</p>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Tastiee coffee shop</h3>
+            <p>
+              Bold coffee for brave souls. Join us for exceptional coffee, warm
+              atmosphere, and meaningful connections.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#location">Location</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Hours</h3>
+            <ul>
+              <li>Monday - Friday: 6:30 AM - 8:00 PM</li>
+              <li>Saturday - Sunday: 7:00 AM - 9:00 PM</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Subscribe</h3>
+            <p>
+              Join our newsletter for updates on new tastiee cups and special events.
+            </p>
+            <form>
+              <div class="form-group">
+                <input type="email" placeholder="Your email" required />
+                <button
+                  type="submit"
+                  class="btn"
+                  style="margin-top: 10px; width: 100%"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Tastiee Coffee Shop. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/tastiee/tastiee.js" defer></script>
+  </body>
+</html>
